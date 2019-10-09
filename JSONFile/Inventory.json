@@ -1,0 +1,33 @@
+{
+    "Rice" :[
+        {
+            "name" : "Basmati Rice",
+            "price" : 200
+        },
+        {
+            "name" : "Kolam Rice",
+            "price" : 100
+        }
+    ],
+
+    "Wheat" :[
+        {
+            "name" : "Spelt",
+            "price" : 30
+        },
+        {
+            "name" : "Durum",
+            "price" : 40
+        }
+    ],
+    "Pulses" :[
+        {
+            "name" : "Beans",
+            "price" : 80
+        },
+        {
+            "name" : "Peas",
+            "price" : 50
+        }
+    ]
+}
