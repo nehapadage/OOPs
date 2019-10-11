@@ -2,19 +2,11 @@
     "Rice": [{
         "name": "Basmati Rice",
         "price": 200,
-        "weight": 500
+        "weight": 493
     }, {
         "name": "Kolam Rice",
         "price": 100,
-        "weight": 200
-    }, {
-        "name": "neha",
-        "price": 56,
-        "weight": 497
-    }, {
-        "name": "neha",
-        "price": 56,
-        "weight": 197
+        "weight": 193
     }],
     "Wheat": [{
         "name": "Spelt",
@@ -24,14 +16,6 @@
         "name": "Durum",
         "price": 40,
         "weight": 550
-    }, {
-        "name": "neha",
-        "price": 56,
-        "weight": 497
-    }, {
-        "name": "neha",
-        "price": 56,
-        "weight": 197
     }],
     "Pulses": [{
         "name": "Beans",
@@ -41,13 +25,5 @@
         "name": "Peas",
         "price": 50,
         "weight": 25
-    }, {
-        "name": "neha",
-        "price": 56,
-        "weight": 497
-    }, {
-        "name": "neha",
-        "price": 56,
-        "weight": 197
     }]
 }

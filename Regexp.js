@@ -17,7 +17,7 @@ class RegExp {
 
             do {
                 var contactNo = read.question("Enter your contact number");
-            } while (util.allNumbers(contactNo) == false)
+            } while (util.contactNum(contactNo) == false)
 
 
             var Dt = new Date();
