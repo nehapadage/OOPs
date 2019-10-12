@@ -3,7 +3,11 @@ var util = require('../OOPs/OOPsUtility')
 var flag = true;
 var read = require('readline-sync');
 
-
+/**
+    * @description this class is used for calling Stock method in utility & reading JSON file
+    * @param nothing
+    * @returns nothing
+    */
 
 class Stock {
     stock(){

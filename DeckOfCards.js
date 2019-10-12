@@ -1,4 +1,8 @@
-
+/**
+    * @description this class is used for calling distribution of Deck of Cards method
+    * @param nothing
+    * @returns nothing
+    */
 var util = require('../OOPs/OOPsUtility');
 class deckOfCards
  {

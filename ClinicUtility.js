@@ -42,7 +42,7 @@ module.exports = {
            
             console.log(index, " index");
 
-            var Appointed_To = Clinic.Doctors[index].Name;// doctor name store into varriable 
+            var Appointed_To = Clinic.Doctors[index].Name;// doctor name store into variable 
             console.log("Appointed_To "+Appointed_To);
 
             //check how many patient appointed to doctor 
@@ -419,11 +419,11 @@ module.exports = {
         console.log("\t-------------------------------------------------------------------------------------------");
         try {
             for (let i = 0; i < Clinic.Doctors.length; i++) {
-                console.log("\t| " + Clinic.Doctors[i].Name + ""
-                    + "\t| " + Clinic.Doctors[i].ID + "\t"
-                    + "\t| " + Clinic.Doctors[i].Specialization + "\t"
-                    + "\t| " + Clinic.Doctors[i].Availability + "\t"
-                    + "\t| " + Clinic.Doctors[i].NoOfPatients + "\t\t  |");
+                console.log("\t " + Clinic.Doctors[i].Name + ""
+                    + "\t " + Clinic.Doctors[i].ID + "\t"
+                    + "\t " + Clinic.Doctors[i].Specialization + "\t"
+                    + "\t " + Clinic.Doctors[i].Availability + "\t"
+                    + "\t " + Clinic.Doctors[i].NoOfPatients + "\t\t  ");
             }
         } catch (error) {
             console.log("* ERROR: " + error);

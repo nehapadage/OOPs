@@ -3,7 +3,11 @@ var util = require('../OOPs/OOPsUtility')
 
 var read = require('readline-sync');
 
-
+/**
+    * @description this class is used for calling Stock Account Data & calling JSON files
+    * @param nothing
+    * @returns nothing
+    */
 
 class StockAccount {
     stockAccount() {
@@ -18,12 +22,7 @@ class StockAccount {
 
 
             util.StockAccountData(StockObject, UserObject);
-
-
-
-
-
-            
+  
 
         } catch (error) {
             console.log(error);

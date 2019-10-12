@@ -1,6 +1,11 @@
 var read = require('readline-sync')
 var util = require('../OOPs/OOPsUtility')
 
+/**
+    * @description this class is used for Replacing data using Regular Expressions
+    * @param nothing
+    * @returns nothing
+    */
 
 class RegExp {
     regexp() {

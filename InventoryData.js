@@ -2,7 +2,11 @@ var fs = require('fs');
 var util = require('../OOPs/OOPsUtility')
 var flag = true;
 var read = require('readline-sync');
-
+/**
+    * @description this class is used for showing Inventory Data & Reading JSON file
+    * @param nothing
+    * @returns nothing
+    */
 class Inventory 
 {
 
