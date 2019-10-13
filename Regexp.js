@@ -21,7 +21,7 @@ class RegExp {
             } while (util.allLetters(fullName) == false)
 
             do {
-                var contactNo = read.question("Enter your contact number");
+                var contactNo = read.questionInt("Enter your contact number");
             } while (util.contactNum(contactNo) == false)
 
 
@@ -29,7 +29,14 @@ class RegExp {
             var date_info = Dt.getDate() + "/" + Dt.getMonth() + "/" + Dt.getFullYear();
 
 
-            util.RegExp(Message, name, fullName, contactNo, date_info);
+            var reg=util.RegExp(Message, name, fullName, contactNo, date_info);
+            Message= reg[0]
+            name=reg[1]
+             fullName=reg[2]
+              contactNo=reg[3] 
+            
+
+              return [Message, name, fullName, contactNo]
 
         } 
         catch (error) {

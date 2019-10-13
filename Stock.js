@@ -1,6 +1,5 @@
 var fs = require('fs');
 var util = require('../OOPs/OOPsUtility')
-var flag = true;
 var read = require('readline-sync');
 
 /**
@@ -18,14 +17,12 @@ class Stock {
             var object = JSON.parse(data);
             // console.log(object);
     
-    
-            if (flag)
-                util.Stock(object);
-    
+                var Result=util.Stock(object);
+            return Result;
         } 
         catch (error) {
-            console.log("File not found");
-            flag = false;
+            console.log(error);
+            
         }
     }
     }

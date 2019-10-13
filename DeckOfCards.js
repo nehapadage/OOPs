@@ -9,7 +9,11 @@ class deckOfCards
      deckofcards()
      {
        try{
-        util.distributingCards();
+        var personCards=util.distributingCards();
+        
+        return [personCards];      // returning array of 4 person
+        
+
        }catch(error){
            console.log(error);
        }  

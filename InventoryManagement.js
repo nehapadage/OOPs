@@ -15,7 +15,12 @@ class InventManage {
 
     var object = JSON.parse(data);
 
-      util.InventoryManagement(object);
+      var data=util.InventoryManagement(object);
+     var rice_name=data[0];
+      var wheat_name=data[1];
+      var pulses_name=data[2];
+
+      return[rice_name,wheat_name,pulses_name]
   }
 }
 

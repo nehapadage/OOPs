@@ -20,7 +20,12 @@ class Inventory
 
 
       if (flag)
-        util.Inventory(object, inputWeight);
+        var data=util.Inventory(object, inputWeight);
+        rice_value=data[0];
+        wheat_value=data[1];
+        pulses_value=data[2];
+
+        return [rice_value,wheat_value,pulses_value]
 
     } 
     catch (error) {

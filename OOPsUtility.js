@@ -9,6 +9,7 @@ module.exports = {
     */
 
     Inventory(object, weight) {
+        try{
         //console.log("Input Weight :",weight);
         //console.log(object);
 
@@ -24,6 +25,7 @@ module.exports = {
             console.log("Price per kg " + rice[i].price);
             console.log("Total weight " + weight + " kg");
             console.log("Total price=" + rice[i].price * weight);
+            var rice_value=rice[i].price * weight;
         }
 
         for (let i in wheat) {
@@ -31,6 +33,7 @@ module.exports = {
             console.log("Price per kg " + wheat[i].price);
             console.log("Total weight " + weight + " kg");
             console.log("Total price=" + wheat[i].price * weight);
+            var wheat_value=wheat[i].price * weight;
         }
 
         for (let i in pulses) {
@@ -38,8 +41,14 @@ module.exports = {
             console.log("Price per kg " + pulses[i].price);
             console.log("Total weight " + weight + " kg");
             console.log("Total price=" + pulses[i].price * weight);
+            var pulses_value=pulses[i].price * weight;
         }
 
+        return [rice_value,wheat_value,pulses_value]
+    }catch(error){
+        console.log(error);
+        
+    }
     },
 
 /**
@@ -108,6 +117,8 @@ module.exports = {
 
             console.log("Total Money you should Pay " + parseInt(Money));
 
+            return[rname,wname,pname]
+
         } catch (error) {
             console.log(error);
         }
@@ -171,6 +182,8 @@ module.exports = {
         Message = Message.replace(/dd-mm-yyyy/, date_info);
 
         console.log(Message);
+
+        return[Message, name, fullName, contactNo, date_info]
     },
 
 /**
@@ -179,22 +192,29 @@ module.exports = {
     * @returns nothing
     */    
 
-    Stock(object) {
-        //  console.log(object);
+    
 
-        var stock = object;
-
-        for (let i in stock) {
-            console.log("Stock Name = " + stock[i].StockName);
-            console.log("No. of Shares = " + stock[i].NoOfShares);
-            console.log("Share price = " + stock[i].SharePrice);
-            console.log("Total value = " + stock[i].NoOfShares * stock[i].SharePrice);
-            console.log("***********************");
-
-        }
-
-
-    },
+    
+        Stock(object) {
+            try{
+            //  console.log(object);
+    
+            var stock = object;
+    
+            for (let i in stock) {
+                console.log("Stock Name = " + stock[i].StockName);
+                console.log("No. of Shares = " + stock[i].NoOfShares);
+                console.log("Share price = " + stock[i].SharePrice);
+                console.log("Total value = " + stock[i].NoOfShares * stock[i].SharePrice);
+                console.log("***********************");
+                var Result=stock[i].NoOfShares * stock[i].SharePrice;
+            }
+        return Result;
+    }catch(error){
+        console.log(error);
+        
+    }
+},
 
 /**
     * @description this method is used for Operation of Shuffling Deck of Cards
@@ -269,6 +289,8 @@ module.exports = {
         console.log("Third player : " + personCards[2]);
         console.log("Fourth player : " + personCards[3]);
 
+        return personCards;
+
     },
 
 /**
@@ -277,7 +299,9 @@ module.exports = {
     * @returns nothing
     */ 
 
-    StockAccountData(StockObject, UserObject) {
+    StockAccountData(StockObject, UserObject) 
+    {
+        try{
         console.log("length-->", UserObject.length);
         var choice = read.questionInt("1.Buy\t2.Sell\nEnter your choice");
         switch (choice) {
@@ -391,6 +415,13 @@ module.exports = {
                 break;
 
         }
+
+        return [uname,cname,nShare];
+
+    }catch(error){
+        console.log(error);
+        
+    }
     },
 
 /**

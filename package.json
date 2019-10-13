@@ -1,0 +1,23 @@
+{
+  "name": "oops",
+  "version": "1.0.0",
+  "main": "AddressMain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehapadage/OOPs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehapadage/OOPs/issues"
+  },
+  "homepage": "https://github.com/nehapadage/OOPs#readme",
+  "description": "",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1"
+  }
+}

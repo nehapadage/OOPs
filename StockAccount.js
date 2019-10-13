@@ -21,8 +21,13 @@ class StockAccount {
 
 
 
-            util.StockAccountData(StockObject, UserObject);
+            var data=util.StockAccountData(StockObject, UserObject);
+
+            var userName=data[0];
+            var companyName=data[1];
+            var noOfShares=data[2];
   
+            return [userName,companyName,noOfShares]
 
         } catch (error) {
             console.log(error);
